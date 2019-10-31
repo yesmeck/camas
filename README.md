@@ -5,7 +5,7 @@ React authorization library.
 - **TypeScript friendly**
 - **Zero dependencies**
 - **React Hooks**
-- **5KB**
+- **Only 559 Bytes after gzip**
 
 ## Installation
 
