@@ -10,7 +10,7 @@
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --outDir cjs",
     "build:esm": "tsc --outDir esm --module es6",
-    "prepack": "run build"
+    "prepack": "npm run build"
   },
   "keywords": [],
   "author": "Wei Zhu <yesmeck@gmail.com>",
