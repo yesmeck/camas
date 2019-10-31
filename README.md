@@ -4,12 +4,14 @@
 
 <hr />
 
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/camas?style=for-the-badge)
+
 Camas is a React authorization library.
 
 - **TypeScript friendly**
 - **Zero dependencies**
 - **React Hooks**
-- **Only 559 Bytes after gzip**
+- **Only 500 Bytes after gzip**
 
 ## Installation
 
