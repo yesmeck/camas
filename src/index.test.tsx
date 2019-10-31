@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Policy, Provider, usePolicy } from '.';
+import { Policy, Provider, usePolicy } from './index';
 import TestRenderer, { act } from 'react-test-renderer';
 
 class PostPolicy extends Policy {

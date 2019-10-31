@@ -1,6 +1,11 @@
 # Camas
 
-TypeScript friendly React authorization library.
+React authorization library.
+
+- **TypeScript friendly**
+- **Zero dependencies**
+- **React Hooks**
+- **5KB**
 
 ## Installation
 
