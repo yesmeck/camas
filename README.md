@@ -39,7 +39,7 @@ class PostPolicy extends Policy<Context> {
 }
 ```
 
-### Add policy provider
+### Add provider
 
 ```typescript
 import { Provider } from 'camas';
