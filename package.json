@@ -2,7 +2,8 @@
   "name": "camas",
   "version": "0.0.1",
   "description": "React authorization library.",
-  "main": "index.js",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
   "scripts": {
     "test": "jest",
     "clean": "rimraf esm cjs",
@@ -12,9 +13,13 @@
     "build:esm": "tsc --outDir esm --module es6",
     "prepack": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["react", "authorization"],
   "author": "Wei Zhu <yesmeck@gmail.com>",
   "license": "MIT",
+  "files": [
+    "cjs",
+    "esm"
+  ],
   "devDependencies": {
     "@testing-library/react": "^9.3.1",
     "@types/jest": "^24.0.21",
