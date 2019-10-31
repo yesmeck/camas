@@ -1,6 +1,10 @@
-# Camas
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/465125/67983909-9c3fd600-fc60-11e9-914c-bc03547412ed.png" alt="camas logo" />
+</div>
 
-React authorization library.
+<hr />
+
+Camas is a React authorization library.
 
 - **TypeScript friendly**
 - **Zero dependencies**
