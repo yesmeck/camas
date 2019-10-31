@@ -18,7 +18,7 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-        npm test --coverage
+        npm test -- --coverage
     - name: Upload coverage to Codecov
       if: success()
       run: curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN
