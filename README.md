@@ -52,7 +52,7 @@ class PostPolicy extends Policy<Context> {
 import { Provider } from 'camas';
 
 const App = () => (
-  <Provider value={{ role: currentUser.role }}>
+  <Provider context={{ role: currentUser.role }}>
     <Routes />
   </Provider>
 );
