@@ -16,6 +16,14 @@
   "keywords": ["react", "authorization"],
   "author": "Wei Zhu <yesmeck@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yesmeck/camas/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesmeck/camas.git"
+  },
+  "homepage": "https://github.com/yesmeck/camas",
   "files": [
     "cjs",
     "esm"
