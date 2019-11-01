@@ -12,6 +12,7 @@ Camas is a React authorization library.
 - **TypeScript friendly**
 - **Zero dependencies**
 - **React Hooks**
+- **Scalable**
 - **Only 500 Bytes after gzip**
 
 ## Installation
