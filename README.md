@@ -32,6 +32,8 @@ $ yarn add camas
 
 ## Usage
 
+[Live demo](https://codesandbox.io/s/camas-demo-17pjy)
+
 ### Define a policy
 
 ```typescript
