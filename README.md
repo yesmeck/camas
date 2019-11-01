@@ -6,6 +6,7 @@
 
 ![Codecov](https://img.shields.io/codecov/c/github/yesmeck/camas?style=for-the-badge)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/camas?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/camas?style=for-the-badge)
 
 Camas is a OO design minimal React authorization library.
 
