@@ -3,9 +3,9 @@ import * as React from 'react';
 const PolicyContext = React.createContext<any>(null);
 
 export class Policy<Context = any> {
-  context: Context;
+  protected context: Context;
 
-  constructor(context: any) {
+  constructor(context: Context) {
     this.context = context;
   }
 }
