@@ -1,6 +1,6 @@
 {
   "name": "camas",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React authorization library.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
