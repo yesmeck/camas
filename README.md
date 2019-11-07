@@ -220,7 +220,7 @@ The `usePolicy` hook receive policies class as it's arguments and return instanc
 const postPolicy = usePolicy(PostPolicy);
 ```
 
-### `withPolicy(policies)`
+### `withPolicies(policies)`
 
 A HOC injects policy instance to class component.
 
