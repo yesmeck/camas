@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div>
+  hello
+</div>
+`;
+
+exports[` 2`] = `
+<div>
+  <div>
+    unauthorized
+  </div>
+</div>
+`;
+
+exports[`camas Authorize 1`] = `
+<div>
+  hello
+</div>
+`;
+
+exports[`camas Authorize 2`] = `
+<div>
+  <div>
+    unauthorized
+  </div>
+</div>
+`;
+
+exports[`camas authorize fails 1`] = `null`;
+
+exports[`camas authorize fails with fallback 1`] = `
+<div>
+  unauthorized
+</div>
+`;
+
+exports[`camas authorize success 1`] = `
+<div>
+  hello
+</div>
+`;
+
+exports[`camas usePolicy 1`] = `
+<div>
+  allow
+</div>
+`;
+
+exports[`camas usePolicy 2`] = `
+<div>
+  deny
+</div>
+`;
+
+exports[`camas withPolices 1`] = `
+<div>
+  allow
+</div>
+`;

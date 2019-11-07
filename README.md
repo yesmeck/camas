@@ -104,7 +104,7 @@ Camas will pass `context` to the policy class when initializing it.
 import { usePolicy } from 'camas';
 
 const PostList = ({ posts }) => {
-  const [postPolicy] = usePolicy(PostPolicy);
+  const postPolicy = usePolicy(PostPolicy);
 
   return (
     <div>
@@ -193,9 +193,9 @@ descript('PostPolicy', () => {
 - `context` - Camas passes `conetxt` to the policy class when initializing it.
 
 ```javascript
-<Providery conetxt={{ user: currentUser }}>
+<Provider conetxt={{ user: currentUser }}>
   <App />
-</Providery>
+</Provider>
 ```
 
 ### `Authorize`
@@ -207,11 +207,7 @@ descript('PostPolicy', () => {
 - `fallback` - Fallback element when policy check now pass.
 
 ```javascript
-<Authorize
-  with={PostPolicy}
-  if={policy => policy.show()}
-  fallback={<div>You are not allow to view these posts.</div>}
->
+<Authorize with={PostPolicy} if={policy => policy.show()} fallback={<div>You are not allow to view these posts.</div>}>
   <PostList />
 </Authorize>
 ```
@@ -221,7 +217,51 @@ descript('PostPolicy', () => {
 The `usePolicy` hook receive policies class as it's arguments and return instances of them.
 
 ```javascript
-const [postPolicy, commentPolicy] = usePolicy(PostPolicy, CommentPolicy);
+const postPolicy = usePolicy(PostPolicy);
+```
+
+### `withPolicy(policies)`
+
+A HOC injects policy instance to class component.
+
+```javascript
+@withPolicies({
+  postPolicy: PostPolicy,
+})
+class PostList extends React.Component {
+  render() {
+    const { posts, postPolicy } = this.props;
+    return (
+      <div>
+        <ul>
+          {posts.map(post => (
+            <li>
+              {post.title}
+              {postPolicy.update(post) && <span>Edit</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+}
+```
+
+### `authorize(policy, check, fallback)`
+
+A HOC to apply policy to the component.
+
+```javascript
+@authorize(
+  PostPolicy,
+  ({ policy }) => policy.show(),
+  <Unauthorized />
+)
+class PostList extends React.Component {
+  render() {
+    return ...
+  }
+}
 ```
 
 ## License
