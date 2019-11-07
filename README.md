@@ -10,6 +10,8 @@
 
 Camas is a OO design minimal React authorization library.
 
+See [v1](https://github.com/yesmeck/camas/tree/v1) branch for the upcoming API change.
+
 - **TypeScript friendly**
 - **Zero dependencies**
 - **React Hooks**
