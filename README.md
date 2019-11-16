@@ -153,7 +153,7 @@ Here is a simple example with jest:
 ```javascript
 import PostPolicy from './PostPolicy';
 
-descript('PostPolicy', () => {
+describe('PostPolicy', () => {
   const admin = {
     isAdmin: true;
   };
