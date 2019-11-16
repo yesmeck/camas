@@ -52,7 +52,7 @@ interface User {
 class PostPolicy {
   protected user: User;
 
-  construtor(context: { user: User }) {
+  constructor(context: { user: User }) {
     this.user = context.user;
   }
 
