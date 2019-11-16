@@ -70,7 +70,7 @@ Usually you can set up a base class to inherit from:
 class BasePolicy {
   protected user: User;
 
-  construtor(context: { user: User }) {
+  constructor(context: { user: User }) {
     this.user = context.user;
   }
 }
